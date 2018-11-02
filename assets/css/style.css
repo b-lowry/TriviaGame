@@ -1,0 +1,21 @@
+body {
+  background-color:lightblue;
+}
+#title {
+  text-align:center;
+}
+#start {
+width:100px;
+margin: 0 auto;
+margin-top:300px;
+text-align:center;
+}
+#start:hover {
+  border: solid 10px black;
+  background:yellow;
+}
+#timeRemain {
+  text-align:center;
+}
+
+  
