@@ -10,14 +10,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Trivia Game Index Page</title>
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1 id="title">Totally Trivial Trivia</h1>
+            <h1 id="title">Red Dead Trivia!!</h1>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div id="rules"></div>
+            <div id="rules2"></div>
+            <div id="rules3"></div>
+        </div>
+        <div class="col-4"></div>
     </div>
     <div class="row">
         <div class="col-12">
@@ -25,8 +34,17 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-4" id="musiccol">
+            <p id="tuneP">Music?</p>
+                    <div class="tunes"></div>
+                    <input type="button" id="dattune" value="Play" onclick="play()"><audio id="audio" src="assets/audio/Mountain sun.m4a" ></audio>
+                    <input type="button" id="dattune" value="Pause" onclick="play()"><audio id="audio" src="assets/audio/Mountain sun.m4a" ></audio>
+        </div>
+        <div class="col-8"></div>
+    </div>
+    <div class="row">
         <div class="col-12">
-            <h3 id="timeRemain"></h3>
+            <h3 id="timeRemain" class="blinking"></h3>
         </div>
     </div>
     <div class="row">
@@ -36,7 +54,10 @@
         </div>
         <div class="row">
         <div class="col-12">
-        <h5 id="answer1"></h5>
+        <h5 type="submit" onclick="" id="answer1-1"></h5>
+        <h5 type="submit" onclick="" id="answer1-2"></h5>
+        <h5 type="submit" onclick="" id="answer1-3"></h5>
+        <h5 type="submit" onclick="" id="answer1-4"></h5>
     
         </div>
     </div>
@@ -47,7 +68,10 @@
         </div>
         <div class="row">
         <div class="col-12">
-        <h5 id="answer2"></h5>
+            <h5 type="submit" onclick="" id="answer2-1"></h5>
+            <h5 type="submit" onclick="" id="answer2-2"></h5>
+            <h5 type="submit" onclick="" id="answer2-3"></h5>
+            <h5 type="submit" onclick="" id="answer2-4"></h5>
     
         </div>
     </div>
@@ -58,13 +82,30 @@
         </div>
         <div class="row">
         <div class="col-12">
-        <h5 id="answer3"></h5>
+            <h5 type="submit" onclick="" id="answer3-1"></h5>
+            <h5 type="submit" onclick="" id="answer3-2"></h5>
+            <h5 type="submit" onclick="" id="answer3-3"></h5>
+            <h5 type="submit" onclick="" id="answer3-4"></h5>
+    
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h4 id="question4"></h4>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-12">
+            <h5 type="submit" onclick="" id="answer4-1"></h5>
+            <h5 type="submit" onclick="" id="answer4-2"></h5>
+            <h5 type="submit" onclick="" id="answer4-3"></h5>
+            <h5 type="submit" onclick="" id="answer4-4"></h5>
     
         </div>
     </div>
     <div class="row">
             <div class="col-12">
-            <h5 id="numberofcorrectanswers"></h5>
+            <h5 id="numberofcorrectanswers"> </h5>
         
             </div>
         </div>
@@ -81,4 +122,4 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/javascript/app.js"></script>
 </body>
-</html
+</html>

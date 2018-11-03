@@ -1,21 +1,99 @@
 body {
-  background-color:lightblue;
+  background-size:1000px 1000px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 #title {
   text-align:center;
 }
+
+.container {
+  width:700px;
+  height:100%;
+  border:10px solid lightcyan;
+  background-color:orange;
+}
+
+
+#rules, #rules2, #rules3 {
+  margin-top:25px;
+  font-size:15px;
+  color:black;
+
+}
+
+#title {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+from {
+  margin-left: 100%;
+  width: 300%; 
+}
+
+to {
+  margin-left: 0%;
+  width: 100%;
+}
+} 
+
 #start {
 width:100px;
 margin: 0 auto;
 margin-top:300px;
 text-align:center;
+
 }
 #start:hover {
   border: solid 10px black;
-  background:yellow;
+  background:white;
 }
+
 #timeRemain {
   text-align:center;
+  font-size:55px;
+}
+
+#answer1-1, #answer1-2, #answer1-3, #answer1-4 {
+width:50px;
+background-color: white;
+}
+
+#answer2-1, #answer2-2, #answer2-3, #answer2-4 {
+  width:110px;
+  background-color: white;
+}
+
+#answer3-1, #answer3-2, #answer3-3, #answer3-4 {
+  width:120px;
+  background-color: white;
+}
+
+#answer4-1, #answer4-2, #answer4-3, #answer4-4 {
+  width:110px;
+  background-color: white;
+}
+
+h5 {
+  text-align:center;
+}
+
+h4 {
+  font-size:20px;
+}
+
+
+.blinking{
+  animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+  0%{     color: #000;    }
+  49%{    color: transparent; }
+  50%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: #000;    }
 }
 
   
